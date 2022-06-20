@@ -9,9 +9,9 @@ function setNewModele($bdd, $user){
     $query -> bindValue(':couleur', $user['couleur'], PDO::PARAM_STR);
     $query -> bindValue(':ID_marque', $user['ID_marque'], PDO::PARAM_INT);
     if($query -> execute()){
-        return "<span class='alerte'>Nouveau modèle enregistré</span>";
+        return "<span class='verification'>Nouveau modèle enregistré.</span>";
     } else {
-        return "<span class='alerte'>Veuillez saisir vos informations à nouveau</span>";
+        return "<span class='alerte'>Veuillez saisir vos informations à nouveau.</span>";
     }
 }
 

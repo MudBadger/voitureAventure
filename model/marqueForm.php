@@ -5,9 +5,9 @@
         $query = $bdd -> prepare($str);
         $query -> bindValue(':nom', $user['nom'], PDO::PARAM_STR);
         if($query -> execute()){
-            return "<span class='alerte'>Nouveau marque enregistrée.</span>";
+            return "<span class='verification'>Nouvelle marque enregistrée.</span>";
         } else {
-            return "<span class='alerte'>Veuillez saisir une marque à nouveau</span>";
+            return "<span class='alerte'>Veuillez saisir une marque à nouveau.</span>";
         }
     }
 ?>

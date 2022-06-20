@@ -99,3 +99,13 @@ img .titre {
     margin-top: 20px;
     font-size: large;
 }
+
+.verification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3E8989;
+    text-align: center;
+    margin-top: 20px;
+    font-size: large;
+}

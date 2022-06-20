@@ -11,7 +11,7 @@ function setNewSession($bdd, $user){
         if(password_verify($user['mdp'], $userBdd['mdp'])){
             $_SESSION['user'] = $userBdd;
             unset($_SESSION['user']['mdp']);
-            return "<span class='alerte'>Connexion Réussie!</span>";
+            return "<span class='verification'>Connexion Réussie!</span>";
         } else {
             return "<span class='alerte'>Mot de passe invalide. Veuillez resaisir votre mot de passe.</span>";
         }

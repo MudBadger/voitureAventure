@@ -7,7 +7,7 @@
         $query -> bindValue(':email', $user['email'], PDO::PARAM_STR);
         $query -> bindValue(':mdp', $user['mdp'], PDO::PARAM_STR);        
         if($query->execute()){
-            return "<span class='alerte'>Inscription reussie!</span>";
+            return "<span class='verification'>Inscription reussie!</span>";
         }else{
             return "<span class='alerte'>Veuillez saisir vos informations à nouveau.</span>";
         }
