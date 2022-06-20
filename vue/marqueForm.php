@@ -15,7 +15,9 @@ if(persoIsset($_POST)){
 
 
 <form method="POST" action="">
-        <h1>Enregistrer une nouvelle marque :</h1>
-        <input type="text" name="nom" placeholder="Nouvelle marque">
-        <button type="submit">Ajouter</button>
+    <div class="inscriForm">
+        <h1 class="grosTitre">Nouvelle marque :</h1>
+        <input class="formInput" type="text" name="nom" placeholder="Nouvelle marque">
+        <button class="formInput" type="submit">Ajouter</button>
+    </div>
 </form>

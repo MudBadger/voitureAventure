@@ -5,6 +5,8 @@ if(persoIsset($_POST)){
     if(!empty($_POST['nom_modele']) && !empty($_POST['immat']) && !empty($_POST['couleur']) && !empty($_POST['ID_marque'])){
         $statutNewModele = newModele($bdd, $_POST);
         echo $statutNewModele;
+    } else {
+        echo "<span class='alerte'> Veuillez remplir tout les champs.</span>";
     }
 }
 
