@@ -24,6 +24,7 @@ include '../controller/config/function.php';
                     <div class='linkButton'>
                         <button class='navButton'><a class='navLink' href='../public/index.php?page=accueil'>Accueil</a></button>
                         <button class='navButton'><a class='navLink' href='../public/index.php?page=voitureFormulaire'>Ajouter véhicule</a></button>
+                        <button class='navButton'><a class='navLink' href='../public/index.php?page=marqueFormulaire'>Ajouter marque</a></button>
                         <button class='navButton'><a class='navLink' href='../public/index.php?page=deconnexion'>Déconnexion</a></button>
                     </div>
                 </nav>
@@ -65,6 +66,10 @@ include '../controller/config/function.php';
 
             case 'voitureFormulaire' :
             include ('../vue/voitureForm.php');
+            break;
+
+            case 'marqueFormulaire' :
+            include ('../vue/marqueForm.php');
             break;
 
             default :
