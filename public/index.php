@@ -23,6 +23,7 @@ include '../controller/config/function.php';
                     </div>
                     <div class='linkButton'>
                         <button class='navButton'><a class='navLink' href='../public/index.php?page=accueil'>Accueil</a></button>
+                        <button class='navButton'><a class='navLink' href='../public/index.php?page=voitureFormulaire'>Ajouter véhicule</a></button>
                         <button class='navButton'><a class='navLink' href='../public/index.php?page=deconnexion'>Déconnexion</a></button>
                     </div>
                 </nav>
@@ -60,6 +61,10 @@ include '../controller/config/function.php';
 
             case 'accueil':
             include ('../vue/accueil.php');
+            break;
+
+            case 'voitureFormulaire' :
+            include ('../vue/voitureForm.php');
             break;
 
             default :

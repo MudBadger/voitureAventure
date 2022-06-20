@@ -5,6 +5,8 @@
         if(!empty($_POST['pseudo']) && !empty($_POST['mdp'])){
             $statutNewSession = newSession($bdd, $_POST);
             echo $statutNewSession;
+        } else {
+            echo "<span class='alerte'> Veuillez remplir tout les champs.</span>";
         }
 
     }
