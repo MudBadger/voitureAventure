@@ -109,3 +109,45 @@ img .titre {
     margin-top: 20px;
     font-size: large;
 }
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    margin: 3% 20%;
+    /*border: solid 3px #E77728;*/
+    border-radius: 5px;
+    box-shadow: 8px 8px 5px #e3aa81,
+                -8px -8px 5px #fdfdfd;
+}
+
+.tabTitre {
+    color: #514663;
+    font-size: larger;
+    margin: 15px;
+    padding: 5px 10px;
+    width: 100;}
+
+.colItem {
+    color: #514663;
+    font-size: large;
+    margin: 15px;
+    padding: 5px 10px;
+    width: 100;
+}
+
+.buttonArray {
+    margin: 15px;
+    padding: 5px 10px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #514663;
+    background-color: #F1F7EE;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #e3aa81,
+    -2px -2px 5px #fdfdfd;
+    border: solid 2px #E77728;
+}

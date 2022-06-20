@@ -32,16 +32,23 @@ if(persoIsset($_POST)){
     $statutNewArray = newArray($bdd, $user);
 
     echo "<table class='table'>
-        <th>Marque</th>
-        <th>Nom</th>
-        <th>Immatriculation</th>
-        <th>Couleur</th>";
+            <div class='rowTitre'>
+                <th class='tabTitre'>Marque</th>
+                <th class='tabTitre'>Nom</th>
+                <th class='tabTitre'>Immatriculation</th>
+                <th class='tabTitre'>Couleur</th>
+                <th class='tabTitre'>Modifier</th>
+                <th class='tabTitre'>Supprimer</th>
+            </div>";
     foreach($statutNewArray as $user){
         echo "<tr>
-            <td>".$user['nom_marque']."</td>
-            <td>".$user['nom_modele']."</td>
-            <td>".$user['immat']."</td>
-            <td>".$user['couleur']."</td>
+                <td class='colItem'>".$user['nom_marque']."</td>
+                <td class='colItem'>".$user['nom_modele']."</td>
+                <td class='colItem'>".$user['immat']."</td>
+                <td class='colItem'>".$user['couleur']."</td>
+                <td><button class='buttonArray'><a href ='./voitureForm.php?ID=$user[modele_id]'>Modifier</a></button></td>
+                <td><button class='buttonArray'><a href ='./voitureForm.php?ID=$user[modele_id]'>Supprimer</a></button></td>
             </tr>";
     }
+   echo  "</table>";
 ?>
