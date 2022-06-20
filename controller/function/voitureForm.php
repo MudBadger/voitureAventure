@@ -10,6 +10,12 @@ function newModele($bdd, $array){
     return $retour;
 }
 
+//fonction afficher le tableau
+function newArray($bdd, $array){
+    $retour = setNewArray($bdd, $array);
+    return $retour;
+}
+
 //fonction menu déroulant marque
 function newMarque($bdd, $array){
     $user['ID_marque'] = ($array['ID_marque']);

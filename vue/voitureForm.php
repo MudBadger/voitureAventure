@@ -27,3 +27,21 @@ if(persoIsset($_POST)){
         <button class="formInput" type="submit">Envoyer</button>
     </div>
 </form>
+
+<?php
+    $statutNewArray = newArray($bdd, $user);
+
+    echo "<table class='table'>
+        <th>Marque</th>
+        <th>Nom</th>
+        <th>Immatriculation</th>
+        <th>Couleur</th>";
+    foreach($statutNewArray as $user){
+        echo "<tr>
+            <td>".$user['nom_marque']."</td>
+            <td>".$user['nom_modele']."</td>
+            <td>".$user['immat']."</td>
+            <td>".$user['couleur']."</td>
+            </tr>";
+    }
+?>

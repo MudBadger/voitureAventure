@@ -31,4 +31,12 @@ function setNewMarque($bdd, $index){
     return $setMarqueArray;
 }
 
+//afficher le tableau des voitures
+function SetNewArray($bdd, $user){
+    $str = "SELECT * ,modele.ID AS modele_id, modele.nom AS nom_modele, marque.nom AS nom_marque FROM modele INNER JOIN marque ON marque.id = modele.ID_marque";
+    $query = $bdd -> query($str);
+    $voitureArray = $query -> fetchAll();
+    return $voitureArray;
+}
+
 ?>
