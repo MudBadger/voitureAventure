@@ -72,10 +72,11 @@ include '../controller/config/function.php';
             case 'marqueFormulaire' :
             include ('../vue/marqueForm.php');
             break;
+            
             case 'recherche' :
             include ('../vue/recherche.php');
             break;
-            
+
             default :
             include ('../vue/accueil.php');
             break;

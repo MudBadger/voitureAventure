@@ -12,6 +12,7 @@ function setNewSession($bdd, $user){
             $_SESSION['user'] = $userBdd;
             unset($_SESSION['user']['mdp']);
             return "<span class='verification'>Connexion Réussie!</span>";
+            return header('../vue/accueil.php');
         } else {
             return "<span class='alerte'>Mot de passe invalide. Veuillez resaisir votre mot de passe.</span>";
         }
